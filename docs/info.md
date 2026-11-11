@@ -9,12 +9,12 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+Este es un circuito de prueba para enviar a fabricar un circuito en TinyTapeout, el cual solo consiste de dos shift register y un contador ascendente de 8 bits.
 
 ## How to test
 
-Explain how to use your project
+Únicamente es darle start a una entrada y comienza a enviar la trama de datos de 1 byte
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+El hardware externo es una señal de reloj, un botón de rst, y un botón para poder darle el inicio al circuito.
