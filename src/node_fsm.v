@@ -49,7 +49,7 @@ module node_fsm #(
 
     // paquete: [0]=ID, [1]=SEQ, [2..9]=sensor
     wire [7:0] pkt_byte = (t_tidx == 4'd0) ? NODE_ID :
-                          (t_tidx == 4'd1) ? seq     : sens[t_tidx - 4'd2];
+                          (t_tidx == 4'd1) ? seq : sens[t_tidx[2:0] - 3'd2];
     wire [7:0] t_txb    = t_pkt ? pkt_byte : t_const;
 
     spi_txn #(.CLK_DIV(CLK_DIV), .CS_GAP(CS_GAP)) TXN (
