@@ -20,7 +20,7 @@ project:
     - "project.v"
     - "node_fsm.v"
     - "spi_txn.v"
-    - "spi_master.v"
+    - "spi.v"
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
