@@ -9,10 +9,10 @@ END UNITS
 MACRO my_logo
    CLASS BLOCK ;
    FOREIGN my_logo 0 0 ;
-   SIZE 21.300 BY 19.200 ;
+   SIZE 9.600 BY 10.800 ;
    SYMMETRY X Y ;
    OBS
       LAYER met4 ;
-         RECT 0 0 21.300 19.200 ;
+         RECT 0 0 9.600 10.800 ;
    END
 END my_logo
