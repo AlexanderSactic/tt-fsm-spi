@@ -25,9 +25,6 @@
 
 `default_nettype none
 
-(* blackbox *) (* keep *)
-module my_logo ();
-endmodule
 
 
 module tt_um_alexandersactic_spi (
@@ -55,9 +52,6 @@ module tt_um_alexandersactic_spi (
         .cs_rf_n(cs_rf_n), .cs_bm_n(cs_bm_n), .sck(sck), .mosi(mosi),
         .miso(ui_in[0]), .active(active)
     );
-
-    (* keep *)
-    my_logo logo();
 
     assign uo_out  = {2'b00, active, 1'b0, cs_bm_n, cs_rf_n, mosi, sck};
     assign uio_out = 8'h00;
