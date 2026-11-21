@@ -33,6 +33,23 @@
 
   "//": "Configuration docs: https://librelane.readthedocs.io/en/latest/reference/configuration.html",
 
+  "MACROS": {
+    "my_logo": {
+      "instances": {
+        "logo": {
+          "location": [10, 10],
+          "orientation": "N"
+        }
+      },
+      "gds": ["dir::../macros/my_logo.gds"],
+      "lef": ["dir::../macros/my_logo.lef"]
+    }
+  },
+
+  "IGNORE_DISCONNECTED_MODULES": [
+  "my_logo", "logo"
+  ],
+  "ERROR_ON_DISCONNECTED_PINS": false,
 
   "//": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
   "//": "!!! DO NOT CHANGE ANYTHING BELOW THIS POINT !!!",
