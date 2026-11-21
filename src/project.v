@@ -49,7 +49,7 @@ module tt_um_alexandersactic_spi (
 
     node_fsm #(
         .CLK_HZ(CLK_HZ), .PERIOD_S(PERIOD_S), .CLK_DIV(1), .CS_GAP(2),
-        .NODE_ID(NODE_ID), .PWRUP_CYC(400), .POLL_GAP(32), .POLL_MAX(2000)
+        .NODE_ID(NODE_ID), .PWRUP_CYC(400), .POLL_GAP(32), .POLL_MAX(200)
     ) u_node (
         .clk(clk), .rst_n(rst_n),
         .cs_rf_n(cs_rf_n), .cs_bm_n(cs_bm_n), .sck(sck), .mosi(mosi),
